@@ -1,0 +1,162 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator
+{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+input:focus
+{
+    outline: none;
+    border: none;
+}
+
+.input
+{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    height: 100px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.input input
+{
+    padding-left: 10px;
+    color: rgb(218, 187, 139);
+    border: none;
+    font-size: 48px;
+    border-radius: 20px;
+    height: 100px;
+    width: 100%;
+    border: none;
+    background-color:antiquewhite;
+}
+
+.bgtomato
+{
+    background-color: tomato;
+    color: aliceblue;
+}
+
+.box
+{
+    display: grid;
+    grid-template-areas: 
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m n o p"
+    "q q r s";
+}
+
+#a
+{
+    grid-area: a;
+}
+#b
+{
+    grid-area: b;
+}
+#c
+{
+    grid-area: c;
+}
+#d
+{
+    grid-area: d;
+}
+#e
+{
+    grid-area: e;
+}
+#f
+{
+    grid-area: f;
+}
+#g
+{
+    grid-area: g;
+}
+#h
+{
+    grid-area: h;
+}
+#i
+{
+    grid-area: i;
+}
+#j
+{
+    grid-area: j;
+}
+#k
+{
+    grid-area: k;
+}
+#l
+{
+    grid-area: l;
+}
+#m
+{
+    grid-area: m;
+}
+#n
+{
+    grid-area: n;
+}
+#o
+{
+    grid-area: o;
+}
+#p
+{
+    grid-area: p;
+}
+#q
+{
+    grid-area: q;
+}
+#r
+{
+    grid-area: r;
+}
+#s
+{
+    grid-area: s;
+}
+
+.btn
+{
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.btn:active
+{
+    transform: scale(0.8,0.8);
+}

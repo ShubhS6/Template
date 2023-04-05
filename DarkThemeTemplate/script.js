@@ -35,22 +35,3 @@ function box()
     
 }
 
-
-const mainnn=document.getElementById('mainnn');
-window.addEventListener('scroll',box);
-function box()
-{
-    const bottom=window.innerHeight/4*4;
-    const total=window.innerHeight;
-    const gallarytop=mainnn.getBoundingClientRect().top;
-    const gallarybottom=mainnn.getBoundingClientRect().bottom;
-    if(gallarytop<bottom)
-    {
-        gallarybox.classList.remove('m');
-    }
-    if(total<gallarybottom)
-    {
-        gallarybox.classList.add('m');
-    }
-    
-}
