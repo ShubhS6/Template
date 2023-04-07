@@ -6,12 +6,81 @@ body
 
 .header
 {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(231, 215, 215);
     box-shadow: 2px 0 8px;
     background-color: antiquewhite;
     align-items: center;
+}
+
+@media  screen and (689px<width<900px) {
+    .header
+    {
+        width: 100vw;
+    }
+
+    .dish img
+    {
+        height: 300px;
+        width: 300px;
+    }
+    .heading h1
+    {
+        font-size: 50px;
+    }
+    .para p
+    {
+        font-size: 15px;
+    }
+}
+
+@media  screen and (100px<width<690px) {
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .descripltion
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .dish img
+    {
+        height: 250px;
+        width: 250px;
+    }
+
+    .card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu
+    {
+        display: none;
+    }
+
+    .header .logo
+    {
+        margin-left: -95px;
+    }
+
+
 }
 
 .logo,.menu

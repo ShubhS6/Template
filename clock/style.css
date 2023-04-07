@@ -1,0 +1,52 @@
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#watch
+{
+    height: 300px;
+    width: 300px;
+    background-image: url(watch.png);
+    background-size: 100%;
+    position: relative;
+}
+
+#hour
+{
+    position: absolute;
+    top: 24%;
+    left: 49.3%;
+    height: 80px;
+    width: 5px;
+    background-color: black;
+    border-radius: 20%;
+    transform-origin: bottom;
+}
+
+#minute
+{
+    position: absolute;
+    top: 17%;
+    left: 49.3%;
+    height: 100px;
+    width: 5px;
+    background-color: blue;
+    border-radius: 20%;
+    transform-origin: bottom;  
+}
+
+#second
+{
+    position: absolute;
+    top: 7%;
+    left: 49.3%;
+    height: 130px;
+    width: 5px;
+    background-color: red;
+    border-radius: 20%;
+    transform-origin: bottom;
+}

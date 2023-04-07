@@ -144,7 +144,7 @@ body
 
 .active
 {
-    transform: translateX(120vh);
+    transform: translateY(120vh);
     opacity: 0;
 }
 
@@ -234,24 +234,25 @@ body
     animation: animate 2s infinite;
 }
 
-@keyframes animate
-{
-    0%
-    {
-        transform: scale(1,1);
-    }
-    50%
-    {
-        transform: scale(0.99,0.99);
-    }
-    100%
-    {
-        transform: scale(1,1);
-    }
-}
+
 /********Gallary End**********/
 
 /********About Start**********/
+
+
+.removephoto
+{
+    transform: translateX(-120vh);
+    opacity: 0;
+}
+
+
+.removeinfo
+{
+    transform: translateX(120vh);
+    opacity: 0;
+}
+
 
 .about
 {
@@ -282,6 +283,7 @@ body
     height: 400px;
     width: 400px;
     box-shadow: 0px 0px 30px white;
+    transition: all 2s ease-in-out;
 }
 
 
@@ -342,6 +344,7 @@ body
 
 .info 
 {
+transition: all 2s ease-in-out;
  width: 600px;
  position: absolute;
  margin-left: 55%;
@@ -383,6 +386,7 @@ body
 
 .about .para
 {
+    transition: all 2s ease-in-out;
     position: absolute;
     width: 650px;
     margin-left: 45%;
